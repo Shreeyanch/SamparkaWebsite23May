@@ -1,0 +1,59 @@
+.icon {
+  top: calc(50% - 252px);
+  left: calc(50% - 154.5px);
+  border-radius: var(--br-3xs);
+  width: 309px;
+  height: 469px;
+  object-fit: cover;
+}
+.icon,
+.menu,
+.orderNow {
+  position: absolute;
+}
+.menu {
+  top: calc(50% - 17.5px);
+  left: calc(50% - 154.5px);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  width: 309px;
+  height: 35px;
+}
+.orderNow {
+  cursor: default;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 11px;
+  left: 122px;
+  font-size: var(--font-size-3xs);
+  text-decoration: underline;
+  letter-spacing: 0.3px;
+  line-height: 10px;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 65px;
+  height: 5.7px;
+}
+.menuParent {
+  position: absolute;
+  top: calc(50% + 217px);
+  left: calc(50% - 154.5px);
+  width: 309px;
+  height: 35px;
+  cursor: pointer;
+}
+.googlereviewpopup {
+  width: 309px;
+  height: 504px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  .orderNow {
+    display: flex;
+  }
+}

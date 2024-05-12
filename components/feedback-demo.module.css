@@ -1,0 +1,142 @@
+.image2Icon {
+  height: auto;
+  width: 499px;
+  position: relative;
+  object-fit: cover;
+  max-width: 50%;
+}
+.filterYourReviews {
+  position: relative;
+  letter-spacing: 0.06em;
+  line-height: 150%;
+  font-weight: 300;
+}
+.optimizeReviews45 {
+  margin: 0;
+}
+.optimizeReviews45Container {
+  width: 314.3px;
+  position: relative;
+  font-size: var(--font-size-mid);
+  letter-spacing: -0.04em;
+  line-height: 26.25px;
+  color: var(--color-lavenderblush);
+  display: inline-block;
+  height: 45.8px;
+  flex-shrink: 0;
+}
+.filterYourReviewsParent {
+  height: 199px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl-8);
+}
+.demo {
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xl) var(--padding-3xs);
+  background-color: var(--color-mediumseagreen-100);
+  width: 248px;
+  height: 70px;
+  border-radius: var(--br-3xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.button:hover {
+  background-color: var(--color-seagreen);
+}
+.buttonWrapper,
+.downloadappInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttonWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: column;
+}
+.downloadappInner {
+  align-self: stretch;
+  flex-direction: row;
+}
+.downloadapp {
+  align-self: stretch;
+  gap: var(--gap-6xl);
+}
+.downloadapp,
+.vouchers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.feedbackdemo {
+  align-self: stretch;
+  background-color: var(--color-gray-900);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-52xl) var(--padding-145xl) var(--padding-75xl);
+  gap: var(--gap-157xl);
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .filterYourReviews {
+    font-size: var(--font-size-11xl);
+  }
+  .feedbackdemo {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .image2Icon {
+    min-width: 400px;
+    max-width: 90%;
+  }
+  .filterYourReviews {
+    font-size: var(--font-size-11xl);
+  }
+  .optimizeReviews45Container {
+    font-size: var(--font-size-sm);
+  }
+  .feedbackdemo {
+    flex-direction: column;
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 428px) {
+  .image2Icon {
+    min-width: 350px;
+  }
+  .filterYourReviews {
+    font-size: var(--font-size-6xl);
+  }
+  .optimizeReviews45Container {
+    font-size: var(--font-size-xs);
+  }
+  .demo {
+    font-size: var(--font-size-mini);
+    line-height: 20px;
+  }
+}

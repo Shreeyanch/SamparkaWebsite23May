@@ -1,0 +1,111 @@
+.pleaseRateYour {
+  align-self: stretch;
+  height: 34px;
+  position: relative;
+  line-height: 200%;
+  font-weight: 500;
+  display: inline-block;
+}
+.starGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+.starRating,
+.starRating1,
+.starRating2,
+.starRating3,
+.starRating4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  border-radius: var(--br-3xs);
+  width: 242px;
+  height: 63.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.starRating1:hover,
+.starRating2:hover,
+.starRating3:hover,
+.starRating4:hover,
+.starRating:hover {
+  background-color: var(--color-ivory);
+}
+.starRating1,
+.starRating2,
+.starRating3,
+.starRating4 {
+  top: 64.2px;
+  left: 0;
+}
+.starRating2,
+.starRating3,
+.starRating4 {
+  top: 144.4px;
+  height: 62.3px;
+}
+.starRating3,
+.starRating4 {
+  top: 223.3px;
+  height: 63.6px;
+}
+.starRating4 {
+  top: 302.1px;
+}
+.starRatingParent {
+  width: 243px;
+  position: relative;
+  height: 365.8px;
+}
+.modal {
+  height: 504px;
+  width: 402px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  text-align: center;
+  font-size: var(--font-size-mid);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1200px) {
+  .pleaseRateYour {
+    font-weight: 500;
+    font-family: var(--font-montserrat);
+  }
+}
+@media screen and (max-width: 428px) {
+  .pleaseRateYour {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+}
+@media screen and (max-width: 360px) {
+  .pleaseRateYour {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-smi);
+  }
+  .modal {
+    width: 320px;
+    gap: var(--gap-base);
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+}

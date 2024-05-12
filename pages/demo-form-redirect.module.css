@@ -1,0 +1,206 @@
+.formTitle {
+  align-self: stretch;
+  position: relative;
+  line-height: 40px;
+}
+.formHeader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+}
+.nameInput {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input2 {
+  align-self: stretch;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+}
+.formFields {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.submit {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+}
+.formSubmitButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) 9px;
+  background-color: rgba(34, 161, 85, 0.78);
+  width: 195px;
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.form,
+.shareYourTravelsForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form {
+  margin: 0;
+  align-self: stretch;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  align-items: flex-start;
+  padding: 28px var(--padding-11xl);
+  gap: 17px;
+}
+.shareYourTravelsForm {
+  width: 657px;
+  align-items: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative !important;
+  left: auto !important;
+}
+.poweredBy {
+  height: 27px;
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+}
+.letterLogo2 {
+  width: 216px;
+  position: relative;
+  height: 42px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  object-fit: contain;
+
+}
+.poweredByParent {
+  width: 1440px;
+  height: 1px;
+  flex-direction: row;
+  gap: var(--gap-11xs);
+}
+.demoForm1,
+.demoForm1Inner,
+.poweredByParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.demoForm1Inner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-xl) 0;
+  font-size: var(--font-size-2xl);
+  color: var(--color-white);
+  font-family: var(--h1);
+}
+.demoForm1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-300);
+  height: 989px;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 100px;
+  mix-blend-mode: normal;
+  text-align: center;
+  font-size: 39px;
+  color: #fff6f6;
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1200px) {
+  .formSubmitButton {
+    background-color: var(--color-mediumseagreen-200);
+  }
+  .poweredBy {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+  .demoForm1Inner {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .formSubmitButton {
+    background-color: var(--color-mediumseagreen-200);
+  }
+  .shareYourTravelsForm {
+    padding: var(--padding-5xl) 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 90%;
+  }
+  .demoForm1Inner {
+    display: flex;
+  }
+}
+@media screen and (max-width: 669px) {
+  .letterLogo2 {
+    width: 150px;
+    object-fit: contain;
+
+  }
+}
+@media screen and (max-width: 428px) {
+  .formTitle {
+    font-size: var(--font-size-8xl);
+  }
+  .shareYourTravelsForm {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 100% !important;
+  }
+  .poweredBy {
+    font-weight: 100;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mini);
+  }
+  .letterLogo2 {
+    width: 100px;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 360px) {
+  .formTitle {
+    font-size: var(--font-size-8xl);
+  }
+}

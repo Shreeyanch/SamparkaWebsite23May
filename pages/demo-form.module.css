@@ -1,0 +1,120 @@
+.image12Icon {
+  width: 128px;
+  position: relative;
+  border-radius: 100px;
+  height: 127px;
+  object-fit: cover;
+}
+.razeTech {
+  position: relative;
+  line-height: 130%;
+}
+.modalWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.poweredBy {
+  height: 27px;
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+}
+.letterLogo2 {
+  width: 216px;
+  position: relative;
+  height: 42px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  object-fit: contain;
+
+}
+.poweredByParent {
+  width: 1440px;
+  height: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xs);
+}
+.frameWrapper {
+  align-self: stretch;
+  padding: var(--padding-xl) 0;
+  font-size: var(--font-size-2xl);
+  font-family: var(--h1);
+}
+.demoForm,
+.frameWrapper,
+.image12Parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image12Parent {
+  align-self: stretch;
+  padding: var(--padding-81xl) 0;
+  gap: var(--gap-xl);
+}
+.demoForm {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-300);
+  overflow: hidden;
+  mix-blend-mode: normal;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+  height: 989px;
+}
+@media screen and (max-width: 1200px) {
+  .razeTech {
+    font-size: var(--font-size-11xl);
+  }
+  .poweredBy {
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mid);
+  }
+}
+@media screen and (max-width: 669px) {
+  .razeTech {
+    font-size: var(--font-size-11xl);
+  }
+  .letterLogo2 {
+    width: 150px;
+    object-fit: contain;
+
+  }
+}
+@media screen and (max-width: 428px) {
+  .razeTech {
+    font-size: var(--font-size-11xl);
+  }
+  .poweredBy {
+    font-weight: 100;
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-mini);
+  }
+  .letterLogo2 {
+    width: 100px;
+    object-fit: contain;
+
+  }
+}
+@media screen and (max-width: 360px) {
+  .razeTech {
+    font-size: var(--font-size-6xl);
+  }
+  .modalWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

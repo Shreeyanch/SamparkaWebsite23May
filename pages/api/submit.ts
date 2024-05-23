@@ -114,7 +114,7 @@ export default async function handler(
         token: process.env.SPARROW_SMS_TOKEN,
         from: "Demo",
         to: body.PhoneNumber, // Assuming PhoneNumber is a valid 10-digit number of Nepal
-        text : `Hey ${body.Name}! \nFeeling curious? \nReach out to learn more about our product at +9779843742684. \nWe're here for you! \n- Samparka`
+        text : `Hello ${body.Name}! \nThankyou for providing a feedback. \nReach out to learn more about our product at +9779843742684. \nWe're here for you! \n- Samparka`
       };
       
       const smsResponse = await axios.post(
